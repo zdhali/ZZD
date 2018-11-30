@@ -1,12 +1,15 @@
 # ZZD
-Collection of Coding Projects completed by me
-Contents: 
-Python
-   Genome Reconstruction
+
+
+## Collection of Coding Projects completed by me
+
+Contents: <br>
+### Python<br>
+   Genome Reconstruction<br>
    
-Mathematica
-   Hexokinase Deficiency Project 
+### Mathematica<br>
+   Hexokinase Deficiency Project<br>
    
-Matlab
-   MAE 8- Final Project
+### Matlab<br>
+   MAE 8- Final Project<br>
    
