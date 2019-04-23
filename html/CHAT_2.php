@@ -1,6 +1,8 @@
 <?php
 
 /**
+ * Simple chat example by Stephan Soller
+ * See http://arkanis.de/projects/simple-chat/
  */
 
 // Name of the message buffer file. You have to create it manually with read and write permissions for the webserver.
@@ -54,7 +56,8 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
     <script type="text/javascript">
         // <![CDATA[
         $(document).ready(function(){
-            // Remove the "loading…" list entry
+            // Remove the "loading…" list entry'
+
             $('ul#messages > li').remove();
 
             $('form').submit(function(){
@@ -155,6 +158,10 @@ setInterval(clock, 1000);
         h1 { margin: 0; padding: 0; font-size: 4em; color: Indigo }
         p.subtitle { margin: 0; padding: 0 0 0 0.125em; font-size: 1.5em; color: Purple; }
         .clock { font-size: 4em ;position: fixed; top:0; right:0 ; color: white}
+        .boxed {border: 2px solid green; background-color: LightBlue}
+
+
+
 
         ul#messages { overflow: auto; height: 20em; margin: 1em 0; padding: 0 3px; list-style: none; border: 2px solid blue; }
         ul#messages li { margin: 1em 0; padding: 0; color: white}
@@ -196,6 +203,15 @@ setInterval(clock, 1000);
         <button type="submit">Send</button>
     </p>
 </form>
+<div class="boxed">
+  <h1> To-Do List </h1>
+      <ul contenteditable="true">
+         <li> Write your to do list here </li>
+         <li> Get to work!
+         <li> You can do this!  </li>
+      </ul>
+    </div>
+
 
 
 </body>
