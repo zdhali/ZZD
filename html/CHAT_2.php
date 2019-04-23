@@ -1,8 +1,7 @@
 <?php
 
 /**
- * Simple chat example by Stephan Soller
- * See http://arkanis.de/projects/simple-chat/
+ * Inspired by Simple chat example by Stephan Soller
  */
 
 // Name of the message buffer file. You have to create it manually with read and write permissions for the webserver.
