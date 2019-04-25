@@ -1,0 +1,161 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <link
+    href='https://fonts.googleapis.com/css?family=BenchNine' rel='stylesheet'>
+    <style>
+    body {
+        font-family: 'BenchNine';font-size: 1em;
+    }
+    </style>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>A machine learning-powered kinetic reconstruction of human metabolism</title>
+
+    <style type="text/css">
+        html { margin: 0em; padding: 0; height: 100% }
+        content {position: relative}
+        content image {position: absolute; top: 0px; right: 0px;}
+        body { height: 100%; margin: 2em; padding: 0; font-family: 'BenchNine', sans-serif; font-size: medium; color: #333;background-image: url("SD_Presentation.jpg"); background-size: 100% 100%; background-repeat: no-repeat; background-color: #78A6D0;
+      background-attachment: fixed;}
+        h1 { margin: 0; padding: 1.65em .5em .5em 0; font-size: 6em; color: DarkBlue; text-shadow: 2px 2px 0px white; text-align: Left;animation-duration: 3s;  animation-name: slidein;}
+        @keyframes slidein {
+          from {
+            margin-left: 100%;
+            width: 100%;
+          }
+
+          to {
+            margin-left: 0%;
+            width: 100%;
+          }
+        }
+
+        .image {padding: 5em 3em 5em 3em; position: relative; -webkit-animation: spin 20s linear infinite; -moz-animation: spin 20s linear infinite; animation: spin 20s linear infinite;}
+        @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+        @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+        @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+        h2 { margin: 0; top: 50;  padding: .5em .125em .5em .125em; font-size: 3em; color: DarkBlue }
+        h2.white { margin: 0; top: 50;  padding: .5em .125em .5em .125em; font-size: 3em; color: White; text-shadow: 2px 2px 0px Black; }
+
+        p.subtitle { margin: 0; padding: .125em .125em .125em .125em; font-size: 1.5em; color: White; text-align: left;}
+        p.text { margin: 0; padding: 0 0 0 0.125em; font-size: 1.5em; color: Black; }
+        p.textwhite { margin: 0; padding: 0 0 0 0.125em; font-size: 1.5em; color: White; }
+
+        p.caption {margin: 0; padding: 0 0 0 0; font-size: 1.5em; color: Black; }
+        ul.list {margin: 0; padding: 0 0 0 0.125em; font-size: 1.5em; color: Black; list-style-type: square; }
+          /* The navigation bar */
+          .navbar {
+            overflow: hidden;
+            background-color: DarkBlue;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+          }
+
+          /* Links inside the navbar */
+          .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+
+          /* Change background on mouse-over */
+          .navbar a:hover {
+            background: #ddd;
+            color: black;
+          }
+
+          /* Main content */
+          .main {
+            margin-top: 30px; /* Add a top margin to avoid content overlay */
+          }
+
+
+
+
+    </style>
+</head>
+<body>
+<div>
+<h1>A machine learning-powered kinetic reconstruction of human metabolism</h1>
+<p class="subtitle"><b> Mentor : <i> Dan Zielinski</i> </br> Kevin Glass, Hong Do, Zafrin Dhali </br>Team 38 </b>
+</div>
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="DONATE_GIVING_TUES_TEMPLATE.html">Methodology</a>
+    <a href="#contact">Results</a>
+  </div>
+<div>
+<h2> Abstract</h2>
+<p class="text"> Multiple online databases such as Brenda, METACYC, Kegg, contain collected kinetic parameters of enzymes for many studied model organisms. While many data points exist, they lack coverage at a network and species level, creating nodes with no validated data, which decreases model prediction capability. The objective is to obtain, curate and clean the kinetic parameters (target) data and the metabolite and protein structural (features) data for enzymes in human central metabolism. Using kinetic data for central metabolism in humans scraped from Brenda and collecting its protein and metabolite features, the model out of Linear Regression, Elastic Net Regression and Random Forest ML algorithms that performed the best at predicting KM parameters was the Random Forest with an accuracy of 0.01469. The inability to create a robust model suggests that the data and/or the algorithms chosen are insufficient to characterize the more complex mechanisms relating structure and function, suggesting future work should attempt to obtain larger, more complete sets of data and/or apply other machine learning algorithms. </p>
+
+  <img class="image" src="cell_full.png" >
+
+<h2> Background</h2>
+<p class="text"> Systems biology uses a reiterative process consisting of obtaining data, analyzing the data, making inductions/predictions to improve computational models and gain mechanistic understanding of the biological characteristics of metabolic networks. The chemical workhorses in the body are enzymes which have been optimized over time by evolution. However, which enzyme features are selected for by evolution to create a more efficient enzyme is not completely understood. In order for scientists to be able to create efficient industrial bioprocesses, comprehensive models that have predictive power and provide a deeper mechanistic understanding of biological networks are needed to maximize yields of bioproducts.
+With respect to progress in enzymatic dynamical systems over the last few decades, the traditional Michaelis-Menten approximation is still the best known approach to the enzyme kinetics; however, with such complex model structure, kinetics and regulation of cell metabolism can hardly be understood. Currently, there are limited workflows for obtaining and processing large amounts of proteomic data as it is computationally expensive. Since separate databases use non-standardized ids and irregular data structures, kinetic data is also difficult to obtain on a network scale because no single location exists to capture, consolidate, and standardize the format of the kinetic data. </p>
+
+<p class="caption"> a)</p>
+<img src="Enzyme Kinetics .png">
+<p class="caption"> b)</p>
+<img src="Capture.png">
+
+<div>
+<p class="caption"> Figure 1: a) Model of Enzyme Active site binding and kinetic equations.
+      b) Michaelis Menten model and definition of system parameters. </p>
+</div>
+</div>
+
+<h2>Objectives</h2>
+<p class="text"> The objective is to obtain, curate and clean kinetic target data and metabolite and protein features for enzymes in human central metabolism to apply Elastic Net Regression and Random Forest ML algorithms to obtain important features for highly efficient enzymes.
+There exists a need for a workflow/pipeline to help gap-fill and predict kinetic parameters for different enzymes. Because structural properties are available for most enzymes even if the kinetic data is not, the goal of this project is to use structural properties of enzymes to predict the kinetic parameters of the reaction. </p>
+
+<h2>Project Overview</h2>
+<p class="textwhite"> The Goal is to: </p>
+<ul class="list"><li>  Clean kinetic parameter (target) data</li>
+<li> Curate metabolite and protein structural (features) data</li>
+<li> Find structural properties that correlate with high efficacy for enzymes</li>
+<li> Gapfill and predict kinetic parameters for different enzymes using Random Forest and P-Elastic Net Regression Algorithms.</li>
+<li> Obtain more complete genome-scale metabolic (GEM) models.</li>
+
+</ul>
+
+
+
+<h2>Methods</h2>
+  <ul class="list">
+    <li>Since there are more than 50,000 reactions with multiple data points for each reaction/enzyme that require curation work, coding scripts were written to help to match the kinetic data to enzyme reaction and structural properties. </li>
+<li>Enzyme commission (EC) number, which are used to identify reactions, can be shared by a broad class of enzymes, as such the kinetic data had to be manually curated to match to a reaction from the scraped data to RECON3D. </li>
+<li>Chemaxon’s Marvin, a chemically desktop toolkit, was used to calculate the feature properties of different metabolites/proteins </li>
+<li>The structural properties of the protein and metabolites were ordered into two separate matrices. The metabolite data was aggregated into values per reaction such that each kinetic data point had its corresponding features. </li>
+<li>The data will be preprocessed using Principal Component Analysis (PCA) to reduce the dimensionality of the matrix and identify important features. </li>
+<li>The matrix with aggregated kinetic and structural data will then be fed into two separate machine learning algorithms, Random Forest and Elastic Net Regression to find correlation between highly efficient enzymes and protein and metabolite features.</li>
+</ul>
+
+<img src="ml_workflow.png">
+<p class="caption"> Figure 2: The objective is to consolidate kinetic and protein information into a single input matrix to apply machine learning algorithms to obtain the most important structural features which if the model has high prediction capability, can be used to gapfill kinetic parameters. </p>
+
+
+<h2 class="white">Project Parts Summary</h2>
+
+<ul class="list">
+  <li>This project aims to capture, consolidate, and standardize the format of the data  so it can be used to apply machine learning algorithms to identify broad level trends in enzyme behavior. </li>
+  <li>Apply random forest and elastic regression algorithms to predict kinetic data based on enzyme structure features </li>
+  <li>Identify and quantify trends between structural properties that correlate with high efficacy for an enzyme</li>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
