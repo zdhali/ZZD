@@ -11,7 +11,7 @@ Iris Peng
 
 Zafrin Dhali 
 
-Special thanks to Tracy Nguyen and Connor, and the rest of TritonXR 
+Special thanks to Tracy Nguyen and Connor, Anish and the rest of TritonXR 
 
 Project: Visualizing PAM recognitions sequences 
 
