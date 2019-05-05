@@ -1,3 +1,10 @@
+Video Demos: 
+
+Windows MR: https://www.youtube.com/watch?v=DlakAxzBZmo
+
+Desktop: https://www.youtube.com/watch?v=2B4PZe_AJ3A
+
+
 Contributors: 
 
 Iris Peng
